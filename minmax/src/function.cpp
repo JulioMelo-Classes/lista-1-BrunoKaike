@@ -1,5 +1,5 @@
-#include "function.h"
 #include <stdlib.h>
+#include <array>
 
 /*! 
  * Finds and returns a pair with the first instance of the smallest element
@@ -10,8 +10,10 @@
  *
  * @return A pair of indexes to the first smallest and last largest values.
  */
-
-std::pair<size_t ,size_t> min_max( int V[], size_t n )
+/*
+20%
+*/
+std::pair<size_t ,size_t> min_max( int V[], std::size_t n )
 {
     // TODO: Adicione aqui sua solução.
 
@@ -35,7 +37,7 @@ std::pair<size_t ,size_t> min_max( int V[], size_t n )
             max.first = x;
             max.second = V[x];
 
-          } else{
+          } else{ //aqui não era  um "else" mas sim outro "if", uma vez que o processamento do menor elemento é totalmente independente do processamento do maior
             
             if(V[x] < min.second){
 

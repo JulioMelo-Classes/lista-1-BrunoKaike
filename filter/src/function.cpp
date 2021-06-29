@@ -13,6 +13,7 @@
  * @return a pointer to the new 'logical' end of the array.
  */
 
+/*blz!*/
 int * filter(int * first, int * last )
 {
     // TODO: coloque aqui o seu código-solução.

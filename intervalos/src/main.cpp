@@ -56,6 +56,9 @@ std::vector<int> setValuesByInterval(std::vector<double> input, std::vector<int>
 
 }
 
+/*o uso do setprecision ficou errado, mas o problema mesmo foi no cálculo das porcentagens
+  boa parte das saídas vc imprime apenas 4 quando são 5 intervalos a serem considerados
+  vou considerar 50% pela organização e bom uso de vectors e funções*/
 int main(void)
 {
     // TODO: Adicione aqui a sua solução.

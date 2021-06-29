@@ -18,9 +18,11 @@ int main( void )
       
       result = 0;
 
-      std::cin>>std::ws>>m;
+      std::cin>>std::ws>>m; //como eof só é setado após a leitura, seu programa roda uma vez a mais. Porém vou considerar!
       std::cin>>std::ws>>n;
-
+      /*o certo seria testar eof após tentar ler os valores*/
+      /*if(cin.eof())
+        break;*/
       if(n > 0){
 
         for(int x = 0; x < n; x++){
